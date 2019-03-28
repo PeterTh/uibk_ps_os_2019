@@ -1,5 +1,9 @@
 # Exercise Sheet 3
 
+Note that starting with this exercise all implementation work
+should be completed in **C**. Ensure that your programs compile 
+with `-Wall -Werror`.
+
 In this exercise sheet you will work with processes and signals.
 
 **Hint**: Remember that a process can be created with `fork()`, `vfork()`, and in
