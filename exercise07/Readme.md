@@ -5,7 +5,7 @@ As before, **provide a Makefile** for all executables.
 
 # Task 1
 
-Implement a single producer multiple consumer pattern as requested in Exercise Sheet 6 Task 2 ([link](../exercise06/Readme.md)), but use `pthread_spin_lock` to protect queue access. What are the advantages and disadvantages compared to `pthread_mutex`?
+Implement a single producer multiple consumer pattern as requested in Exercise Sheet 6 Task 2 ([link](../exercise06/README.md)), but use `pthread_spin_lock` to protect queue access. What are the advantages and disadvantages compared to `pthread_mutex`?
 
 Measure the execution time with `/usr/bin/time -v [executable]`, compare it to the execution time of last week's task and interpret the results.
 
