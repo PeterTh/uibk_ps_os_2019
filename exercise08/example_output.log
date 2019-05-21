@@ -1,0 +1,113 @@
+simulation data:
+name	arrival_time	service_time	priority
+A    	           0	           3	       1
+B    	           2	           6	       1
+C    	           4	           4	       2
+D    	           6	           5	       2
+E    	           8	           2	       3
+
+===================================        fcfs        ===================================
+
+  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19 
+  A   A   A   B   C   C   C   B   C   B   B   B   B   D   E   E   D   D   D   D 
+          Y   Y           Y   Y                       Y           Y             
+
+name	response_time	turnaround_time
+A   	            0	               3
+B   	            1	              10
+C   	            0	               5
+D   	            7	               7
+E   	            6	               2
+
+
+
+===================================    round_robin     ===================================
+
+  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19 
+  A   A   A   B   B   C   B   C   D   E   B   C   D   E   B   C   D   B   D   D 
+          Y   Y           Y   Y                       Y           Y             
+
+name	response_time	turnaround_time
+A   	            0	               3
+B   	            1	              15
+C   	            1	              11
+D   	            2	              12
+E   	            1	               5
+
+
+
+===================================        srt         ===================================
+
+  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19 
+  A   A   A   B   C   C   C   C   E   E   B   B   B   B   B   D   D   D   D   D 
+          Y   Y           Y   Y                       Y           Y             
+
+name	response_time	turnaround_time
+A   	            0	               3
+B   	            1	              12
+C   	            0	               4
+D   	            9	               5
+E   	            0	               2
+
+
+
+===================================   round_robin_q3   ===================================
+
+  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19 
+  A   A   A   B   C   C   C   D   E   E   B   B   B   C   B   B   D   D   D   D 
+          Y   Y           Y   Y                       Y           Y             
+
+name	response_time	turnaround_time
+A   	            0	               3
+B   	            1	              13
+C   	            0	              10
+D   	            1	              13
+E   	            0	               2
+
+
+
+===================================       hpf_p        ===================================
+
+  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19 
+  A   A   A   B   C   C   C   D   E   E   C   D   D   D   B   D   B   B   B   B 
+          Y   Y           Y   Y                       Y           Y             
+
+name	response_time	turnaround_time
+A   	            0	               3
+B   	            1	              17
+C   	            0	               7
+D   	            1	               9
+E   	            0	               2
+
+
+
+===================================       hpf_np       ===================================
+
+  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19 
+  A   A   A   B   C   C   C   D   E   E   C   D   D   D   B   B   B   D   B   B 
+          Y   Y           Y   Y                       Y           Y             
+
+name	response_time	turnaround_time
+A   	            0	               3
+B   	            1	              17
+C   	            0	               7
+D   	            1	              11
+E   	            0	               2
+
+
+
+===================================      lottery       ===================================
+
+  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19 
+  A   A   A   B   B   B   B   C   D   D   D   C   C   C   D   D   B   E   E   B 
+          Y   Y           Y   Y                       Y           Y             
+
+name	response_time	turnaround_time
+A   	            0	               3
+B   	            1	              17
+C   	            3	               7
+D   	            2	               8
+E   	            9	               2
+
+
+
