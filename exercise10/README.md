@@ -18,7 +18,7 @@ behavior a bit more interesting:
 # Task 2
 
 Implement a **free list allocator** (see lecture slides) which uses free lists
-for requests up to `2^16` Bytes (one separate free list for each power of 2).
+for requests up to `2^20` Bytes (one separate free list for each power of 2).
 
 As in last week's exercise, create one version that uses a global set of free
 lists with access locks, and another which uses a separate allocator for each
@@ -29,4 +29,4 @@ thread.
 Use the new `membench` implemented in Task 1 to compare all 4 of your
 allocators from this week and last week as well as the default system
 allocator. Perform your comparisons across 1, 2, 4 and 8 threads, and for
-allocations of `S=2^X` Bytes for `X=4...20`.
+allocations of `S=2^X` Bytes for `X=4...16`.
